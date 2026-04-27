@@ -12,4 +12,3 @@ def get_data_path(filename: str) -> str:
 
 
 st.title("Personal Banking App")
-st.write("This app will help track deposits, withdrawals, and account balance.")
