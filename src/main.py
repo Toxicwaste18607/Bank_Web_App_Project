@@ -12,3 +12,5 @@ def get_data_path(filename: str) -> str:
 
 
 st.title("Personal Banking App")
+name = st.text_input ("what is your name")
+st.write(name)
