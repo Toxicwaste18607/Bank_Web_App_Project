@@ -9,8 +9,14 @@ def get_data_path(filename: str) -> str:
     '''Returns the path to an asset file, given its filename.'''
     return os.path.join(APP_PATH, "data", filename)
 
+def page_1():
+    name = st.text_input ("what is your name")
+    
 
+def page_2():
+    st.write(name)
 
+    
 st.title("Personal Banking App")
-name = st.text_input ("what is your name")
-st.write(name)
+page_1()
+page_2()
