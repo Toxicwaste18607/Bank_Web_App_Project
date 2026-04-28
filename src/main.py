@@ -11,12 +11,13 @@ def get_data_path(filename: str) -> str:
 
 def page_1():
     name = st.text_input ("what is your name")
-    
+    if name is int:
+        st.write("thats not a name")
+    else:
+        st.write(f"hello{name}")
 
-def page_2():
-    st.write(name)
+
 
     
 st.title("Personal Banking App")
 page_1()
-page_2()
