@@ -37,4 +37,6 @@ def hello_page():
 
 #app code here
 
-login_page()
+
+if "user" not in st.session.state:
+    st.session_state.user=None
