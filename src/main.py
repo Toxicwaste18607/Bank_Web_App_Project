@@ -15,7 +15,10 @@ def login_page():
     with st.form("login_form"):
         user_name=st.text_input("Enter your username")
         role = st.selectbox("Role", ["user", "admin"])
-        submitted
+        submitted = st.form_submit_button("Login")
+
+        if submitted:
+            st.write(f"Hello {user_name} you are a {role}.")
 
 
 
@@ -24,3 +27,4 @@ def login_page():
 
 
 
+login_page()
