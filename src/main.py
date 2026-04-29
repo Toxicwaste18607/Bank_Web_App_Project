@@ -12,7 +12,13 @@ def get_data_path(filename: str) -> str:
 def login_page():
     st.header("Login Page")
 
-    
+    with st.form("login_form"):
+        user_name=st.text_input("Enter your username")
+
+        
+
+
+
 
 
 
