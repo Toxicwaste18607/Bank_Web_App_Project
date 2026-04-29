@@ -10,8 +10,9 @@ def get_data_path(filename: str) -> str:
     return os.path.join(APP_PATH, "data", filename)
 
 def login_page():
-    pass
+    st.header("Login Page")
 
+    
 
 
 
