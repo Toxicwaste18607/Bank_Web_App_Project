@@ -9,11 +9,11 @@ def get_data_path(filename: str) -> str:
     '''Returns the path to an asset file, given its filename.'''
     return os.path.join(APP_PATH, "data", filename)
 
-def page_1():
-    name = st.text_input ("what is your name")
-
-    st.write (name)
+def login_page():
+    pass
 
 
-st.title("Personal Banking App")
-page_1()
+
+
+
+
