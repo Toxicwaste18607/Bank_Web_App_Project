@@ -42,7 +42,7 @@ def hello_page():
 
 if "user" not in st.session_state:
     st.session_state.user=None
-    login_page
+    login_page()
 
 else:
     st.write("NOT IMPLEMENTED YET")
