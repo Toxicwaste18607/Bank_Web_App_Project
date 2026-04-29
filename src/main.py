@@ -25,11 +25,11 @@ def login_page():
         submitted = st.form_submit_button("Login")
 
         if submitted:
-            st.session_state.user = User(username,role)
+            st.session_state_state.user = User(username,role)
             st.success ("Logged in")
             st.rerun
 
-            
+
 def hello_page(): 
     pass
 
