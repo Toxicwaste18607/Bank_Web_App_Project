@@ -14,8 +14,8 @@ def login_page():
 
     with st.form("login_form"):
         user_name=st.text_input("Enter your username")
-
-        
+        role = st.selectbox("Role", ["user", "admin"])
+        submitted
 
 
 
