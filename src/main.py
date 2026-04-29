@@ -24,7 +24,6 @@ def login_page():
 
 
 
-
-
+#app code here
 
 login_page()
