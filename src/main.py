@@ -23,13 +23,7 @@ class User():
 
 
 
-
-
-
-def hello_page(): 
-    pass
-
-
+#NO INDERPENDENT PAGES
 
 
 
