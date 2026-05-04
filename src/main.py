@@ -28,7 +28,7 @@ def login_page():
         if submitted:
             st.session_state.user = User(username,role)
             st.success ("Logged in")
-            st.rerun
+            st.rerun()
 
 
 def hello_page(): 
