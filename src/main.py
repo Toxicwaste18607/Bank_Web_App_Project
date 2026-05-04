@@ -23,7 +23,7 @@ class User():
 
 
 
-#NO INDERPENDENT PAGES
+#NO INDEPENDENT PAGES
 
 
 
