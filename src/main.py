@@ -23,7 +23,9 @@ class User():
 
 
 
-#NO INDEPENDENT PAGES
+#NONE INDEPENDENT PAGES
+
+
 
 
 
