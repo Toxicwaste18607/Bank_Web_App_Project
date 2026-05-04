@@ -40,7 +40,8 @@ def login_page():
 
 
 def hello_page(): 
-    st.write (f'Wellcome {username} ')
+    user = st.session_state.user
+    st.write (f'Welcome {username} ')
 
 
 
