@@ -1,50 +1,44 @@
-import streamlit as st
-
-#from models import User
-from pages.dashboard import show_dashboard_page
-from pages.transactions import show_transactions_page
-from pages.admin_dashboard import show_admin_page
+import os
+import streamlit as st 
+from pages import login 
 
 
-def login_page():
-    st.title("Login")
+APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
-    with st.form("login_form"):
-        username = st.text_input("Username")
-        role = st.selectbox("Role", ["user", "admin"])
-        submitted = st.form_submit_button("Login")
 
-        if submitted:
-            st.session_state.user = User(username, role)
-            st.rerun()
+def get_data_path(filename: str) -> str:
+    '''Returns the path to an asset file, given its filename.'''
+    return os.path.join(APP_PATH, "data", filename)
+
+
+
+def check_user_exists():pass
+
+
+class User():
+    def __init__(self,username,role):
+        self.username= username
+        self.role=role
+
+
+
+
+
+
+
+def hello_page(): 
+    pass
+
+
+
+
+
+#app code here
 
 
 if "user" not in st.session_state:
-    st.session_state.user = None
-
-
-if st.session_state.user is None:
-    login_page()
+    st.session_state.user=None
+    login.login_page()
 
 else:
-    user = st.session_state.user
-
-    pages = ["Dashboard", "Transactions"]
-
-    if user.is_admin():
-        pages.append("Admin")
-
-    selected_page = st.sidebar.radio("Pages", pages)
-
-    if selected_page == "Dashboard":
-        show_dashboard_page(user)
-
-    elif selected_page == "Transactions":
-        show_transactions_page(user)
-
-    elif selected_page == "Admin":
-        show_admin_page(user)
-
-    if st.sidebar.button("Logout"):
-        st.session_state.user = None
-        st.rerun()
+    st.write("NOT IMPLEMENTED YET")
