@@ -1,6 +1,6 @@
 import os
 import streamlit as st 
-from pages import login 
+from pages import login from
 
 
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
@@ -23,7 +23,11 @@ class User():
 
 
 
-#NONE INDEPENDENT PAGES
+
+
+
+def hello_page(): 
+    pass
 
 
 
@@ -34,7 +38,7 @@ class User():
 
 if "user" not in st.session_state:
     st.session_state.user=None
-    login.login_page()
+    login_page()
 
 else:
     st.write("NOT IMPLEMENTED YET")
