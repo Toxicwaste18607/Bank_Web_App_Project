@@ -40,7 +40,7 @@ def login_page():
 
 
 def hello_page(): 
-    pass
+    st.write (f'Wellcome {username} ')
 
 
 
@@ -54,4 +54,4 @@ if "user" not in st.session_state:
     login_page()
 
 else:
-    st.write("NOT IMPLEMENTED YET")
+    hello_page()
