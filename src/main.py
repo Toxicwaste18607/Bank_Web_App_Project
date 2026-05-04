@@ -9,6 +9,11 @@ def get_data_path(filename: str) -> str:
     '''Returns the path to an asset file, given its filename.'''
     return os.path.join(APP_PATH, "data", filename)
 
+
+
+def check_user_exists():pass
+
+
 class User():
     def __init__(self,username,role):
         self.username= username
@@ -26,9 +31,14 @@ def login_page():
         submitted = st.form_submit_button("Login")
 
         if submitted:
+
+            check_user_exists()
+
             st.session_state.user = User(username,role)
             st.success ("Logged in")
             st.rerun()
+
+
 
 
 def hello_page(): 
