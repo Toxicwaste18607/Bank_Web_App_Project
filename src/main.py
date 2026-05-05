@@ -14,13 +14,23 @@ def get_data_path(filename: str) -> str:
 
 
 def load_user_data():
-    path= get_data_path("user_data")
+    path= get_data_path("user_data.json")
 
     if not os.path.exists(path):
         return {}
     
     with open (path,'r') as file:
         return json.load(file)
+    
+
+
+
+def save_users(users):
+    path = get_data_path("users_data.json")
+
+    with open(path, "w") as file:
+        json.dump(users, file, indent=4)
+
 
 
 
