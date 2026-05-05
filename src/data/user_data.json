@@ -1,4 +1,13 @@
 {
+    "user id":{
+        "Password":"1234",
+        "Name": "User_Name",
+        "Account Balance":"0",
+        "Account Email":
+    },
+
+
+
   "513": {
     "Password": "1234",
     "Name": "Aditya",
