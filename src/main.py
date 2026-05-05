@@ -41,6 +41,7 @@ def create_user(user_id, password, name, email, role="user"):
     users = load_user_data()
 
     user_id = str(random.randint (100,999))
+    
 
     users[user_id] = {
         "password": password,
