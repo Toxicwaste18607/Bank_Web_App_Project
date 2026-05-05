@@ -13,7 +13,8 @@ def get_data_path(filename: str) -> str:
 
 
 
-
+def load_user_data():
+    path=get_user_data("user_data")
 
 
 
