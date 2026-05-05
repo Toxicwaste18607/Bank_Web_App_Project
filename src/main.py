@@ -18,6 +18,9 @@ def load_user_data():
 
     if not os.path.exists(path):
         return {}
+    
+    with open (path,'r') as file:
+        return json.load(file)
 
 
 
