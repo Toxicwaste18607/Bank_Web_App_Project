@@ -38,7 +38,7 @@ def save_users(users):
 
 
 def create_user(user_id, password, name, email, role="user"):
-    users = load_users()
+    users = load_users_data()
 
     # check if user already exists
     if user_id in users:
