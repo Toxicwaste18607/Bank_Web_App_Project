@@ -14,7 +14,10 @@ def get_data_path(filename: str) -> str:
 
 
 def load_user_data():
-    path=get_user_data("user_data")
+    path= get_data_path("user_data")
+
+    if not os.path.exists(path):
+        return {}
 
 
 
