@@ -37,8 +37,30 @@ def save_users(users):
 
 
 
+def create_user(user_id, password, name, email, role="user"):
+    users = load_users()
 
-def check_user_exists():pass
+    # check if user already exists
+    if user_id in users:
+        return False
+
+    users[user_id] = {
+        "password": password,
+        "name": name,
+        "role": role,
+        "balance": 0,
+        "email": email
+    }
+
+    save_users(users)
+    return True
+
+
+
+
+
+
+
 
 
 class User():
