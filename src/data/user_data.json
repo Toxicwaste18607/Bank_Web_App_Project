@@ -1,17 +1,12 @@
 {
-    "user id":{
-        "Password":"1234",
-        "Name": "User_Name",
-        "Account Balance":"0",
-        "Account Email":"Temp_Email@temp.com"
-    },
-
-
-
+    
   "513": {
-    "Password": "1234",
-    "Name": "Aditya",
-    "Account Balance": "0",
-    "Account Email": "aacharya4@caldwell.edu"
+    "password": "1234",
+    "name": "Aditya",
+    "role": "admin",
+    "balance": 0,
+    "email": "aacharya4@caldwell.edu"
   }
+
+  
 }
