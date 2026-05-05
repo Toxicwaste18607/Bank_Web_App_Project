@@ -38,7 +38,7 @@ def save_users(users):
 
 
 def create_user(user_id, password, name, email, role="user"):
-    users = load_users_data()
+    users = load_user_data()
 
     # check if user already exists
     if user_id in users:
@@ -81,7 +81,6 @@ def login_page():
 
         if submitted:
 
-            check_user_exists()
 
             st.session_state.user = User(username,role)
             st.success ("Logged in")
