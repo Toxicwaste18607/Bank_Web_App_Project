@@ -55,7 +55,19 @@ def create_user(user_id, password, name, email, role="user"):
     return True
 
 
+def check_login(user_id, password):
+    users = load_user_data()
 
+    if user_id in users:
+        if users[user_id]["password"] == password:
+            user_data = users[user_id]
+
+            return User(
+                username=user_id,
+                role=user_data["role"]
+            )
+
+    return None
 
 
 
