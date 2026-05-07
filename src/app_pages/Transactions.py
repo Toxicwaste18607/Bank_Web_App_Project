@@ -1,6 +1,9 @@
 import streamlit as st
 
+columns = st.columns(2)
 
+col1=columns[0]
+col2=columns[1]
 
 
 def withdrawal():pass
