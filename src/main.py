@@ -64,23 +64,22 @@ def create_user(password, name, email, role="user"):
     return user_id
     '''Makes new user'''
 
-
 def check_login(user_id, password):
     users = load_user_data()
 
     if user_id in users:
-        if users[user_id]["password"] == password:
-            user_data = users[user_id]
+        user_data = users[user_id]
 
-        return User (user_id=user_id,
-                    name=user_data["name"],
-                    role=user_data["role"],
-                    balance=user_data["balance"],
-                    email=user_data["email"])
+        if user_data["password"] == password:
+            return User(
+                user_id=user_id,
+                name=user_data["name"],
+                role=user_data["role"],
+                balance=user_data["balance"],
+                email=user_data["email"]
+            )
 
-
-    else:
-        st.error("Wrong Id or Password")
+    return None
    
 
 
