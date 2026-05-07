@@ -21,6 +21,7 @@ def deposit(money_in):
     user = st.session_state.user
 
     user.balance += money_in
+    save_users()
 
 
 
