@@ -25,9 +25,9 @@ def deposit(money_in):
 
     user.balance += money_in
 
-    users[user.user_id]["balance"]= user.balance
+    users[user.user_id]["balance"] = user.balance
     save_users(users)
-
+    return user
 
 
 def withdrawal_page():
