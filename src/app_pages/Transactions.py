@@ -20,10 +20,10 @@ def withdrawal(money_out):
 
 def deposit(money_in):
     user = st.session_state.user
-    user = load_user_data()
+    users = load_user_data()
 
     user.balance += money_in
-    save_users()
+    save_users(users)
 
 
 
