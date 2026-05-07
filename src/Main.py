@@ -6,17 +6,6 @@ from app_pages.Transactions import *
 
 
 
-#DEFS
-
-
-   
-
-
-
-
-
-
-
 
 
 #app code here
