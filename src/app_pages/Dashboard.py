@@ -1,5 +1,5 @@
 import streamlit as st
-
+from .Transactions import *
 
 
 
@@ -8,6 +8,8 @@ def show_dashboard_page():
 
     st.title("Dashboard")
     st.write(f"Welcome, {user.name}")
+
+    show_transactions_page()
 
     if st.button("Logout"):
         st.session_state.user = None
