@@ -109,6 +109,7 @@ def login_page():
             else:
                 st.error("Invalid login")
 
+
 def create_new_account(): 
     st.header("New User")
 
