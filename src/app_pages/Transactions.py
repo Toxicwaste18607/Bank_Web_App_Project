@@ -4,15 +4,18 @@ import streamlit as st
 
 
 def withdrawal():
-    
-    user.balace
+    user = st.session_state.user
+
+    if user.balace 
 
 
 
 
 
 def deposit():
-    st.write("deposit")
+    user = st.session_state.user
+
+    user.balance 
 
 
 
