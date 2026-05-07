@@ -16,7 +16,7 @@ def show_transactions_page():
     user = st.session_state.user
 
     st.title("Transactions")
-    st.write(f"Transactions for {user.name}")
+    choice 
 
 
 
