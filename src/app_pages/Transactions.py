@@ -9,7 +9,7 @@ def withdrawal(money_out):
     if user.balance <=0:
         return None
     else:
-        user.balance += money_out
+        user.balance -= money_out
         save_users()
 
 
@@ -17,10 +17,10 @@ def withdrawal(money_out):
 
 
 
-def deposit():
+def deposit(money_in):
     user = st.session_state.user
 
-    user.balance 
+    user.balance += money_in
 
 
 
@@ -41,7 +41,7 @@ def deposit_page():
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
-            deposit()
+            deposit(money_in)
 
 
 
