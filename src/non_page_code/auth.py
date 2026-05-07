@@ -1,6 +1,6 @@
 import streamlit as st
-from classes import *
-from storage import *
+from .classes import *
+from .storage import *
 
 
 
