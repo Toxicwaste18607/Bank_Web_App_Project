@@ -10,6 +10,11 @@ def deposit():
     st.write("deposit")
 
 
+
+def withdra
+
+
+
 def show_transactions_page():
     columns = st.columns(2)
 
