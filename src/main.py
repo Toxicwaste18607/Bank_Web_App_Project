@@ -72,7 +72,12 @@ def check_login(user_id, password):
         if users[user_id]["password"] == password:
             user_data = users[user_id]
 
-            return User()
+        return User (user_id=user_id,
+                    name=user_data["name"],
+                    role=user_data["role"],
+                    balance=user_data["balance"],
+                    email=user_data["email"])
+
 
     return None
 
