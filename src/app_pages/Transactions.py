@@ -9,7 +9,7 @@ def withdrawal():
     if user.balance <=0:
         return None
     else:
-        user.balance
+        user.balance += money_out
 
 
 
