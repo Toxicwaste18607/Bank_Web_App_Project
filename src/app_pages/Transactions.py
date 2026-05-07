@@ -79,6 +79,7 @@ def show_transactions_page():
 
     elif st.session_state.transaction_type == "deposit":
         deposit_page()
+        
 
 
 
