@@ -9,6 +9,8 @@ if "user" not in st.session_state or st.session_state.user is None:
 
 def withdrawal():pass
 
+def deposit():pass
+
 
 def show_transactions_page():
     user = st.session_state.user
