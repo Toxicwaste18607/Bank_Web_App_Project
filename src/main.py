@@ -78,9 +78,10 @@ def check_login(user_id, password):
                     balance=user_data["balance"],
                     email=user_data["email"])
 
-    
 
-    return None
+    else:
+        st.error("Wrong Id or Password")
+   
 
 
 def generate_user_id(users):
