@@ -17,14 +17,14 @@ def show_transactions_page():
     col2=columns[1]
     
     with col1:
-        st.button("Withdrawal")
+        withdrawal=st.button("Withdrawal")
         if col1 == True:
             withdrawal()
 
 
     with col2:
-        st.button("Deposit")
-        if col2 == True:
+        deposit=st.button("Deposit")
+        if deposit  == True:
             deposit()
 
 
