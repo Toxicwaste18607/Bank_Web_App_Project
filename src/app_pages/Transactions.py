@@ -37,7 +37,7 @@ def withdrawal_page():
             if withdrawal is not None:
                 st.write("Transaction complete")
             else:
-                st.write("Your balance is to low 
+                st.write("Your balance is to low")
 
 
 
