@@ -10,4 +10,4 @@ def show_dashboard_page(user):
     st.write(f"Welcome, {user.username}")
 
 
-show_dashboard_page()
+show_dashboard_page(user)

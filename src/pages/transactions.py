@@ -7,4 +7,4 @@ def show_transactions_page(user):
 
 
 
-show_transactions_page()
+show_transactions_page(user)
