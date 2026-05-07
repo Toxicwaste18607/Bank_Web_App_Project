@@ -3,13 +3,14 @@ import streamlit as st
 
 
 
-def withdrawal():
+def withdrawal(money_out):
     user = st.session_state.user
 
     if user.balance <=0:
         return None
     else:
         user.balance += money_out
+        
 
 
 
@@ -29,7 +30,7 @@ def withdrawal_page():
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
-            withdrawal()
+            withdrawal(money_out)
 
 
 
