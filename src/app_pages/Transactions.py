@@ -34,6 +34,11 @@ def withdrawal_page():
         if summitted:
             withdrawal(money_out)
 
+            if withdrawal is not None:
+                st.write("Transaction complete")
+            else:
+                st.write("Your balance is to low 
+
 
 
 def deposit_page():
