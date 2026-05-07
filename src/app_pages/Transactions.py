@@ -4,7 +4,12 @@ import streamlit as st
 
 
 def withdrawal():
-    st.write("withdrawal")
+    
+    user.balace
+
+
+
+
 
 def deposit():
     st.write("deposit")
