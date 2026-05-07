@@ -37,11 +37,10 @@ def save_users(users):
 
 
 
-def create_user(user_id, password, name, email, role="user"):
+def create_user(password, name, email, role="user"):
     users = load_user_data()
 
     user_id = generate_user_id(users)
-    
 
     users[user_id] = {
         "password": password,
@@ -52,7 +51,8 @@ def create_user(user_id, password, name, email, role="user"):
     }
 
     save_users(users)
-    return True
+
+    return user_id
 
 
 def check_login(user_id, password):
