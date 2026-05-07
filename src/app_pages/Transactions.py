@@ -14,8 +14,12 @@ def show_transactions_page():
     col1=columns[0]
     col2=columns[1]
     
-    with col1
+    with col1:
+        st.button("Withdrawal")
+        
 
+    with col2:
+        st.button("Deposit")
 
 
 
