@@ -18,7 +18,8 @@ def withdrawal_page():
 
 
 def deposit_page():
-    with st.form():
+    with st.form("depoit_form"):
+        money_in=st.text_input
 
 
 
