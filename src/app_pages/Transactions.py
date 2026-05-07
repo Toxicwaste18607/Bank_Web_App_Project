@@ -6,8 +6,10 @@ import streamlit as st
 def withdrawal():
     user = st.session_state.user
 
-    if user.balace <=0:
-        
+    if user.balance <=0:
+        return None
+    else:
+        user.balance
 
 
 
