@@ -27,7 +27,7 @@ def load_user_data():
 
 
 def save_users(users):
-    path = get_data_path("users_data.json")
+    path = get_data_path("user_data.json")
 
     with open(path, "w") as file:
         json.dump(users, file, indent=4)
@@ -97,11 +97,13 @@ def login_page():
         submitted = st.form_submit_button("Login")
 
         if submitted:
+            user = check_login(user_id, password)
 
-
-            st.session_state.user = User(username,role)
-            st.success ("Logged in")
-            st.rerun()
+            if user is not None:
+                st.session_state.user = user
+                st.rerun()
+            else:
+                st.error("Invalid login")
 
 def create_new_account(): 
     st.header("New User")
