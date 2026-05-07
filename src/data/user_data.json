@@ -1,16 +1,9 @@
 {
-    "513": {
-        "password": "1234",
-        "name": "Aditya",
-        "role": "admin",
-        "balance": 0,
-        "email": "aacharya4@caldwell.edu"
-    },
-    "786": {
-        "password": "Bob",
+    "873": {
+        "password": "123",
         "name": "Connor",
         "role": "user",
         "balance": 0,
-        "email": "Test@test.com"
+        "email": "bb"
     }
 }
