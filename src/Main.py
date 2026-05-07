@@ -2,7 +2,7 @@ import os
 import streamlit as st 
 import json
 import random
-
+from app_pages import *
 
 
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
