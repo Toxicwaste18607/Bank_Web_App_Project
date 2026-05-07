@@ -5,5 +5,12 @@
         "role": "user",
         "balance": 7800.0,
         "email": "bb"
+    },
+    "732": {
+        "password": "Babajide1212.",
+        "name": "Richard",
+        "role": "user",
+        "balance": 0,
+        "email": "richarddare05@gmail.com"
     }
 }
