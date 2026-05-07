@@ -8,9 +8,7 @@ def deposit():pass
 
 
 def show_transactions_page():
-    user = st.session_state.user
-
-    st.title("Transactions")
+    
     choice = st.radio ("Choose", ["Withdrawal","Deposit"])
     if choice == "Withdrawal":
         withdrawal()
