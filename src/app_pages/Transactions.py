@@ -11,7 +11,12 @@ def deposit():
 
 
 
-def withdra
+def withdrawal_page():
+    
+
+
+def deposit_page():
+
 
 
 
