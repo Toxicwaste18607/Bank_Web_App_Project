@@ -121,6 +121,8 @@ def create_new_account():
         submitted = st.form_submit_button("Create Account")
 
         if submitted:
+            if name == "":
+                st.error("Please fill out all feilds")
             new_id = create_user(password, name, email)
             st.success(f"Account created! Your user ID is {new_id}")
 
