@@ -32,9 +32,10 @@ def withdrawal_page():
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
-            withdrawal(money_out)
+            result = withdrawal(money_out)
 
-            if withdrawal is not None:
+
+            if result is not None:
                 st.write("Transaction complete")
             else:
                 st.write("Your balance is to low")
