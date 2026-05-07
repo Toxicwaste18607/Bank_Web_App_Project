@@ -16,7 +16,12 @@ def show_transactions_page():
     user = st.session_state.user
 
     st.title("Transactions")
-    choice 
+    choice = st.radio ("Choose", ["Withdrawal","Deposit"])
+    if choice == "Withdrawal":
+        withdrawal()
+    if choice== "Deposit":
+        deposit()
+
 
 
 
