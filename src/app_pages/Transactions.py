@@ -13,6 +13,7 @@ def deposit():
 
 def withdrawal_page():
     with st.form(withdrawal_form):
+        
 
 
 def deposit_page():
