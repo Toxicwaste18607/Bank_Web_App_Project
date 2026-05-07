@@ -9,11 +9,13 @@ APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 #CLASS
 
-class User():
-    def __init__(self,username,role):
-        self.username= username
-        self.role=role
-
+class User:
+    def __init__(self, user_id, name, role, balance, email):
+        self.user_id = user_id
+        self.name = name
+        self.role = role
+        self.balance = balance
+        self.email = email
 
 
 
