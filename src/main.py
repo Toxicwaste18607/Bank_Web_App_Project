@@ -95,9 +95,7 @@ def login_page():
         user_id = st.text_input("Enter your user ID")
 
         password = st.text_input(
-            "Enter your password",
-            type="password"
-        )
+            "Enter your password",type="password" )
 
         submitted = st.form_submit_button("Login")
 
