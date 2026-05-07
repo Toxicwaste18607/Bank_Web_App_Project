@@ -14,11 +14,11 @@ def deposit():
 def withdrawal_page():
     with st.form(withdrawal_form):
         
-        money_out=st.text_input("What is the amount you would like to withdrawal")
+        money_out=st.text_input("What is the amount you would like to withdraw.")
 
 
 def deposit_page():
-
+    with st.form():
 
 
 
