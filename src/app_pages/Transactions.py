@@ -5,6 +5,7 @@ from non_page_code.storage import save_users, load_user_data
 
 def withdrawal(money_out):
     user = st.session_state.user
+    user = load_user_data()
 
     if user.balance <=0:
         return None
@@ -19,6 +20,7 @@ def withdrawal(money_out):
 
 def deposit(money_in):
     user = st.session_state.user
+    user = load_user_data()
 
     user.balance += money_in
     save_users()
