@@ -123,9 +123,9 @@ def create_new_account():
             if name == "" or password =="" or email=="":
                 st.error("Please fill out all feilds")
             
-        else:
-            new_id = create_user(password, name, email)
-            st.success(f"Account created! Your user ID is {new_id}")
+            else:
+                new_id = create_user(password, name, email)
+                st.success(f"Account created! Your user ID is {new_id}")
 
 
         
