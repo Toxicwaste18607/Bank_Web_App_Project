@@ -17,6 +17,8 @@ class User:
         self.balance = balance
         self.email = email
 
+    def allow_pages():pass
+
 
 
 #DEFS
