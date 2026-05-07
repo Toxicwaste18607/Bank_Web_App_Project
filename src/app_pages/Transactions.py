@@ -28,7 +28,7 @@ def deposit(money_in):
 def withdrawal_page():
     with st.form("withdrawal_form"):
         
-        money_out=st.text_input("What is the amount you would like to withdraw.")
+        money_out=st.number_input_input("What is the amount you would like to withdraw.")
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
@@ -43,7 +43,7 @@ def withdrawal_page():
 
 def deposit_page():
     with st.form("depoit_form"):
-        money_in=st.text_input("How much money would you like to deposit.")
+        money_in=st.number_input("How much money would you like to deposit.")
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
