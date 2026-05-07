@@ -76,11 +76,10 @@ def show_transactions_page():
 
     if st.session_state.transaction_type == "withdrawal":
         withdrawal_page()
-        "transaction_type"==None
 
     elif st.session_state.transaction_type == "deposit":
         deposit_page()
-        "transaction_type"==None
+     
 
 
 
