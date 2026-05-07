@@ -70,6 +70,12 @@ def check_login(user_id, password):
     return None
 
 
+def generate_user_id(users):
+    while True:
+        new_id = str(random.randint(100, 999))
+
+        if new_id not in users:
+            return new_id
 
 
 
@@ -96,6 +102,9 @@ def login_page():
             st.session_state.user = User(username,role)
             st.success ("Logged in")
             st.rerun()
+
+def create_new_account(): pass
+    
 
 
 def hello_page(): 
