@@ -22,7 +22,10 @@ def deposit(money_in):
     user = st.session_state.user
     users = load_user_data()
 
+
     user.balance += money_in
+
+    
     save_users(users)
 
 
