@@ -1,9 +1,6 @@
 import streamlit as st
 
 
-if "user" not in st.session_state or st.session_state.user is None:
-    st.warning("Please log in first.")
-    st.stop()
 
 
 def show_dashboard_page():
@@ -13,4 +10,3 @@ def show_dashboard_page():
     st.write(f"Welcome, {user.name}")
 
 
-show_dashboard_page()
