@@ -1,5 +1,4 @@
 import streamlit as st
-user=st.session_state.user
 
 
 
