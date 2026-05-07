@@ -8,10 +8,11 @@ import random
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
 #CLASS
-v
 
-
-
+class User():
+    def __init__(self,username,role):
+        self.username= username
+        self.role=role
 
 
 
@@ -22,7 +23,6 @@ def get_data_path(filename: str) -> str:
     return os.path.join(APP_PATH, "data", filename)
 
 
-
 def load_user_data():
     path= get_data_path("user_data.json")
 
@@ -31,8 +31,7 @@ def load_user_data():
     
     with open (path,'r') as file:
         return json.load(file)
-    
-
+    '''Loads user data from the file'''
 
 
 def save_users(users):
@@ -40,10 +39,7 @@ def save_users(users):
 
     with open(path, "w") as file:
         json.dump(users, file, indent=4)
-
-
-
-
+    '''Saves users data'''
 
 
 def create_user(password, name, email, role="user"):
@@ -62,6 +58,7 @@ def create_user(password, name, email, role="user"):
     save_users(users)
 
     return user_id
+    '''Makes new user'''
 
 
 def check_login(user_id, password):
