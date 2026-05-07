@@ -12,19 +12,5 @@
         "role": "user",
         "balance": 0,
         "email": "Test@test.com"
-    },
-    "679": {
-        "password": "123",
-        "name": "",
-        "role": "user",
-        "balance": 0,
-        "email": "tiah@bobs.com"
-    },
-    "878": {
-        "password": "",
-        "name": "",
-        "role": "user",
-        "balance": 0,
-        "email": ""
     }
 }
