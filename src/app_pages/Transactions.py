@@ -20,6 +20,7 @@ def withdrawal_page():
 def deposit_page():
     with st.form("depoit_form"):
         money_in=st.text_input("How much money would you like to deposit.")
+        if sub
 
 
 
