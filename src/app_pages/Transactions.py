@@ -58,6 +58,9 @@ def deposit_page():
 
 
 def show_transactions_page():
+
+    if "transaction_type" not in st.session_state:
+        st.session_state.transaction_type = None
     columns = st.columns(2)
 
     col1=columns[0]
