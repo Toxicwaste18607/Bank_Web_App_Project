@@ -7,7 +7,16 @@ import random
 
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
+#CLASS
+v
 
+
+
+
+
+
+
+#DEFS
 def get_data_path(filename: str) -> str:
     '''Returns the path to an asset file, given its filename.'''
     return os.path.join(APP_PATH, "data", filename)
@@ -77,13 +86,6 @@ def generate_user_id(users):
         if new_id not in users:
             return new_id
 
-
-
-
-class User():
-    def __init__(self,username,role):
-        self.username= username
-        self.role=role
 
 #NONE INDEPENDENT PAGES
 
