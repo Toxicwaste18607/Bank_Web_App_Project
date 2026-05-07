@@ -9,20 +9,6 @@ from app_pages.Transactions import *
 
 APP_PATH = os.path.dirname(os.path.abspath(__file__))
 
-#CLASS
-
-class User:
-    def __init__(self, user_id, name, role, balance, email):
-        self.user_id = user_id
-        self.name = name
-        self.role = role
-        self.balance = balance
-        self.email = email
-
-    def allow_pages():pass
-
-
-
 #DEFS
 def get_data_path(filename: str) -> str:
     '''Returns the path to an asset file, given its filename.'''
