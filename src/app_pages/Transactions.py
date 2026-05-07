@@ -48,7 +48,7 @@ def withdrawal_page():
 
 
 def deposit_page():
-    with st.form("depoit_form"):
+    with st.form("deposit_form"):
         money_in=st.number_input("How much money would you like to deposit.")
         summitted= st.form_submit_button("Confirm transaction")
 
