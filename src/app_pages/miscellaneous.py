@@ -1,5 +1,5 @@
 import streamlit as st
-from non_page_code.storage import *
+from non_page_code.auth import *
 
 
 
