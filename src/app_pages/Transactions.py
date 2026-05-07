@@ -31,12 +31,12 @@ def show_transactions_page():
     
     with col1:
         if st.button("Withdrawal"):
-            withdrawal()
+            withdrawal_page()
 
 
     with col2:
         if st.button("Deposit"):
-            deposit()
+            deposit_page()
 
 
 
