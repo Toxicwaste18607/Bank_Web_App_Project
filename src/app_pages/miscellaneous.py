@@ -47,10 +47,4 @@ def create_new_account():
 
         
 
-    
-
-
-def hello_page(): 
-    user = st.session_state.user
-    st.write (f'Welcome {user.name} ')
 

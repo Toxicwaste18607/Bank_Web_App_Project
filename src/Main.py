@@ -33,8 +33,6 @@ if st.session_state.user is None:
         create_new_account()
 
 else:
-    hello_page()
+    show_dashboard_page()
 
-    if st.button("Logout"):
-        st.session_state.user = None
-        st.rerun()
+    
