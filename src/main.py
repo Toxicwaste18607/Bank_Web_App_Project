@@ -88,12 +88,14 @@ class User():
 #NONE INDEPENDENT PAGES
 
 def login_page():
-    st.header("Login Page")
-
-    
     with st.form("login_form"):
-        username=st.text_input("Enter your username")
-        role = st.selectbox("Role", ["user", "admin"])
+        user_id = st.text_input("Enter your user ID")
+
+        password = st.text_input(
+            "Enter your password",
+            type="password"
+        )
+
         submitted = st.form_submit_button("Login")
 
         if submitted:
@@ -101,10 +103,11 @@ def login_page():
 
             if user is not None:
                 st.session_state.user = user
+                st.success("Logged in!")
                 st.rerun()
+
             else:
                 st.error("Invalid login")
-
 
 def create_new_account(): 
     st.header("New User")
