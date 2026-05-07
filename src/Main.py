@@ -1,7 +1,5 @@
-import os
+
 import streamlit as st 
-import json
-import random
 from app_pages.miscellaneous import *
 from app_pages.Dashboard import *
 from app_pages.Transactions import *
