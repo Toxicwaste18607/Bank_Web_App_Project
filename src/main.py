@@ -40,7 +40,7 @@ def save_users(users):
 def create_user(user_id, password, name, email, role="user"):
     users = load_user_data()
 
-    user_id = str(random.randint (100,999))
+    user_id = generate_user_id(users)
     
 
     users[user_id] = {
@@ -103,7 +103,16 @@ def login_page():
             st.success ("Logged in")
             st.rerun()
 
-def create_new_account(): pass
+def create_new_account(): 
+    st.header("New User")
+
+    with st.form("new_user_form"):
+        name=st.text_input("Enter your name")
+        password= st.text_input("Enter a password" , type="password")
+        email= st.text_input("Email")
+
+        
+
     
 
 
