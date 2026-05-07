@@ -3,9 +3,11 @@ import streamlit as st
 
 
 
-def withdrawal():pass
+def withdrawal():
+    st.write("withdrawal")
 
-def deposit():pass
+def deposit():
+    st.write("deposit")
 
 
 def show_transactions_page():
@@ -16,10 +18,12 @@ def show_transactions_page():
     
     with col1:
         st.button("Withdrawal")
-        
+        withdrawal()
+
 
     with col2:
         st.button("Deposit")
+        deposit()
 
 
 
