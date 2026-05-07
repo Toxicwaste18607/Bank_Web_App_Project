@@ -9,6 +9,8 @@ def show_dashboard_page():
     st.title("Dashboard")
     st.write(f"Welcome, {user.name}")
 
+    st.markdown(user.balance)
+
     show_transactions_page()
 
     if st.button("Logout"):
