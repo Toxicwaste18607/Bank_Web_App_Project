@@ -65,15 +65,17 @@ def show_transactions_page():
     
     with col1:
         if st.button("Withdrawal"):
-            withdrawal_page()
-
+            st.session_state.transaction_type = "withdrawal"
 
     with col2:
         if st.button("Deposit"):
-            deposit_page()
+            st.session_state.transaction_type = "deposit"
 
+    if st.session_state.transaction_type == "withdrawal":
+        withdrawal_page()
 
-
+    elif st.session_state.transaction_type == "deposit":
+        deposit_page()
 
 
 
