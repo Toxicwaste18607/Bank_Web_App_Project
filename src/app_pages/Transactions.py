@@ -1,5 +1,5 @@
 import streamlit as st
-
+from non_page_code.storage import save_users
 
 
 
@@ -10,7 +10,8 @@ def withdrawal(money_out):
         return None
     else:
         user.balance += money_out
-        
+        save_users()
+
 
 
 
