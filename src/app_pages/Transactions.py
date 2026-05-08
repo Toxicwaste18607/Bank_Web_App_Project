@@ -9,7 +9,7 @@ def withdrawal(money_out):
 
 
     users[user.user_id]["balance"] = user.balance
-    
+    temp_balance= user.balance -= money_out
 
     if user.balance <=0:
         return None
