@@ -9,9 +9,12 @@ def withdrawal(money_out):
 
 
     users[user.user_id]["balance"] = user.balance
-    temp_balance =(user.balance -= money_out)
+    temp_balance = user.balance
 
-    if user.balance <=0:
+    temp_balance-=money_out
+
+
+    if temp_balance <=0:
         return None
     else:
         user.balance -= money_out
