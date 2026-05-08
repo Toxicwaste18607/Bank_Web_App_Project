@@ -63,7 +63,7 @@ def deposit_page():
 
         if summitted:
             deposit(money_in)
-            st.write(f"{user.balance} ")
+            st.write(f"{money_in} ")
 
 
 
