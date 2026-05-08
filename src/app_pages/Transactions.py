@@ -8,7 +8,7 @@ def withdrawal(money_out):
     users = load_user_data()
 
 
-    users[user.user_id]["balance"] = user.balance
+    user.balance = users[user.user_id]["balance"] 
     temp_balance = user.balance
 
     temp_balance-=money_out
