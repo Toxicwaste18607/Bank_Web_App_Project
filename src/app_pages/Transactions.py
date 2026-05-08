@@ -7,11 +7,16 @@ def withdrawal(money_out):
     user = st.session_state.user
     users = load_user_data()
 
+
+    users[user.user_id]["balance"] = user.balance
+    
+
     if user.balance <=0:
         return None
     else:
         user.balance -= money_out
         save_users(users)
+    return user
 
 
 
