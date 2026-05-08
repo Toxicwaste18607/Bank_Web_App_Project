@@ -9,7 +9,7 @@ def show_dashboard_page():
     st.title("Dashboard")
     st.write(f"Welcome, {user.name}")
 
-    st.write(f"Current Balance{user.balance:.2f}")
+    st.write(f"Current Balance is ${user.balance:.2f}")
 
     show_transactions_page()
 
