@@ -1,6 +1,7 @@
 import streamlit as st
 from non_page_code.storage import save_users, load_user_data
 
+user = st.session_state.user
 
 
 def withdrawal(money_out):
@@ -62,6 +63,7 @@ def deposit_page():
 
         if summitted:
             deposit(money_in)
+            st.write(f"{user.balance} ")
 
 
 
