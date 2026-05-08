@@ -18,6 +18,7 @@ def withdrawal(money_out):
         return None
     else:
         user.balance -= money_out
+        users[user.user_id]["balance"]=user.balance
         save_users(users)
     return user
 
