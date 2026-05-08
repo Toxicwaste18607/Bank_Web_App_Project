@@ -2,7 +2,8 @@ import streamlit as st
 from non_page_code.auth import *
 
 
-
+def search_username():
+    pass 
 
 
 def login_page():
