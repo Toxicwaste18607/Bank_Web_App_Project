@@ -49,7 +49,7 @@ def withdrawal_page():
 
 
             if result is not None:
-                st.write("Transaction complete")
+                st.write(f"${money_out} has been withdrawn from your account.")
             else:
                 st.write("Your balance is to low")
 
@@ -62,7 +62,7 @@ def deposit_page():
 
         if summitted:
             deposit(money_in)
-            st.write(f"{money_in} has been added to your account.")
+            st.write(f"${money_in} has been added to your account.")
 
 
 
