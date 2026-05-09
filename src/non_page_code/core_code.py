@@ -12,6 +12,7 @@ from classes.admin import Admin
 
 def app_core():
     user = st.session_state.user
+    
     if st.session_state.current_page==None:
         st.session_state.current_page = 'home'
 
