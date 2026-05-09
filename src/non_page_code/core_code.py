@@ -33,6 +33,10 @@ def app_core():
                 st.session_state.user = None
                 st.rerun()
         
+    if user.role=='admin':
+        st.write(f'Admin screen')
+        
+
     if st.session_state.current_page == 'home':
         show_dashboard_page()
 
