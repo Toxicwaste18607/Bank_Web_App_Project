@@ -1,6 +1,7 @@
 import streamlit as st
 from .Transactions import *
-
+from classes.user import User
+from classes.admin import Admin
 
 
 def show_dashboard_page():
