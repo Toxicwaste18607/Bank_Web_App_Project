@@ -66,7 +66,7 @@ def deposit_page():
 
 
 
-def show_transactions_page():
+'''def show_transactions_page():
 
     if "transaction_type" not in st.session_state:
         st.session_state.transaction_type = None
@@ -87,7 +87,7 @@ def show_transactions_page():
         withdrawal_page()
 
     elif st.session_state.transaction_type == "deposit":
-        deposit_page()
+        deposit_page()'''
      
 
 

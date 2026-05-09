@@ -28,7 +28,7 @@ def show_dashboard_page():
             st.rerun()
         
     if st.session_state.current_page == 'home':
-        show_transactions_page()
+        show_dashboard_page()
 
     if st.session_state.current_page =='deposit':
         deposit_page()
