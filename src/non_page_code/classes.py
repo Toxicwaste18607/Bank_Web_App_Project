@@ -5,5 +5,6 @@ class User:
         self.role = role
         self.balance = balance
         self.email = email
+        
 
     def allow_pages():pass
