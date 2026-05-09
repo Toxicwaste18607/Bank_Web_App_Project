@@ -5,7 +5,7 @@ from .Transactions import *
 
 def show_dashboard_page():
     left,mid,right=st.columns(3)
-    top,center,bottom=st.
+
 
 
 
