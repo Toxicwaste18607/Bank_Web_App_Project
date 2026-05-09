@@ -1,4 +1,4 @@
-from non_page_code.storage import save_users
+from non_page_code.storage import save_balance
 
 
 
@@ -24,7 +24,7 @@ class User:
             return None
         else:
             self.balance -= money_out
-            save_users(self.balance)
+            save_balance(self)
         return 
 
 
@@ -37,6 +37,6 @@ class User:
 
         self.balance += money_in
 
-        save_balance(self.b)
+        save_balance(self)
         return 
 
