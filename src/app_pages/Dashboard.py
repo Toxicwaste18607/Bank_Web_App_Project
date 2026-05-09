@@ -14,7 +14,8 @@ def show_dashboard_page():
     #if user.check == "user":
     with st.sidebar:
         st.write(f'Hello {user.name}.')
-        if st.button('Home'):pass
+        if st.button('Home'):
+            st.session_state.current_page
 
         if st.button('Deposit'):pass
 
