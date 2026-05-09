@@ -34,9 +34,10 @@ def app_core():
                 st.rerun()
         
     if user.role=='admin':
-        st.write(f'Admin screen')
 
         with st.sidebar:
+            st.write(f'Admin screen')
+
             if st.button('Home'):
                 st.session_state.current_page='home'
 
