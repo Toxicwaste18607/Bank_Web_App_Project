@@ -8,7 +8,7 @@ def search_username():
 
 def login_page():
     with st.form("login_form"):
-        user_id = st.text_input("Enter your user ID")
+        user_id = st.text_input("Enter your user ID or Username.")
 
         password = st.text_input(
             "Enter your password",type="password" )
