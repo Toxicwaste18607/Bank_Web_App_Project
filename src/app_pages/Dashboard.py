@@ -11,7 +11,11 @@ def show_dashboard_page():
 
     st.write(f"Current Balance is ${user.balance:,.2f}")
 
-    show_transactions_page()
+    with st.sidebar:
+        st.write
+
+
+
 
     if st.button("Logout"):
         st.session_state.user = None
