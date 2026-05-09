@@ -25,7 +25,7 @@ class User:
         else:
             self.balance -= money_out
             save_balance(self)
-        return 
+        return True
 
 
 
