@@ -56,11 +56,10 @@ def generate_user_id(users):
         if new_id not in users:
             return new_id
         
-
 def save_balance(user):
-    path = get_data_path("user_data.json")
+    users = load_user_data()
 
-    with open(path, "w") as file:
-        json.dump(users[user['balance'[user.balance]]], file, indent=4)
-    
+    users[user.user_id]["balance"] = user.balance
+
+    save_users(users)
 

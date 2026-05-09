@@ -2,6 +2,7 @@ from non_page_code.storage import save_users
 
 
 
+
 class User:
     def __init__(self, user_id, name, username,role, balance, email):
         self.user_id = user_id
