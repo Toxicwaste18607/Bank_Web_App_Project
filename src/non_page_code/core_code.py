@@ -30,8 +30,9 @@ def app_core():
 
             if st.button('Logout'):
                 st.session_state.current_page='home'
-                st.session_state.user = None
                 st.rerun()
+        
+
         
     if user.role=='admin':
 
@@ -43,7 +44,6 @@ def app_core():
 
             if st.button('Logout'):
                 st.session_state.current_page='home'
-                st.session_state.user = None
                 st.rerun()
         
 
