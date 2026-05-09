@@ -11,7 +11,7 @@ def show_dashboard_page():
 
     st.write(f"Current Balance is ${user.balance:,.2f}")
 
-    if user.check
+    #if user.check == "user":
     with st.sidebar:
         st.write(f'Hello {user.name}.')
         if st.button():pass
@@ -19,6 +19,8 @@ def show_dashboard_page():
         if st.button():pass
 
         if st.button():pass
+
+        if st.buttom():pass
 
 
 
