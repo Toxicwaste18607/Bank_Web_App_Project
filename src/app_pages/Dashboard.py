@@ -14,11 +14,11 @@ def show_dashboard_page():
     #if user.check == "user":
     with st.sidebar:
         st.write(f'Hello {user.name}.')
-        if st.button():pass
+        if st.button('Home'):pass
 
-        if st.button():pass
+        if st.button('Deposit'):pass
 
-        if st.button():pass
+        if st.button('Withdraw'):pass
 
         if st.buttom('Logout'):
             st.session_state.user = None
