@@ -12,7 +12,8 @@ from classes.admin import Admin
 
 def app_core():
     user = st.session_state.user
-    st.session_state.current_page = 'home'
+    if st.session_state.current_page==None:
+        st.session_state.current_page = 'home'
 
 
     if user.role== 'user':
@@ -33,7 +34,7 @@ def app_core():
                 st.rerun()
         
 
-        
+
     if user.role=='admin':
 
         with st.sidebar:
