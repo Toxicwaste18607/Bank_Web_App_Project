@@ -1,31 +1,12 @@
 {
-    "Test": {
-        "password": "123",
-        "name": "Connor",
-        "role": "user",
-        "balance": 261360.0,
-        "email": "bb"
-    },
-    "732": {
-        "password": "Babajide1212.",
-        "name": "Richard",
-        "role": "user",
-        "balance": 80.0,
-        "email": "richarddare05@gmail.com"
-    },
-    "226": {
-        "password": "Tiahspassword",
-        "name": "CashballQueen",
-        "role": "user",
-        "balance": 90000000000,
-        "email": "tiah.loney@gmail.com"
-    },
+    
+    
     "487": {
         "password": "123",
         "name": "Connor Mielewski",
         "user_name": "ConnorJ",
         "role": "user",
-        "balance": 0,
+        "balance": 10000.0,
         "email": "Connor@cool.com"
     }
 }
