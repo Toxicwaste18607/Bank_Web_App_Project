@@ -19,7 +19,7 @@
         "password": "123",
         "name": "Admin",
         "username": "Admin",
-        "role": "Admin",
+        "role": "admin",
         "balance": 0,
         "email": "Admin"
     }
