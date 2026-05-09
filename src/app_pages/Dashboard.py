@@ -9,7 +9,7 @@ def show_dashboard_page():
 
     user = st.session_state.user
     
-   
+    if 
 
     with mid:
         st.title("Dashboard")

@@ -40,12 +40,6 @@ def app_core():
             if st.button('Home'):
                 st.session_state.current_page='home'
 
-            if st.button('Deposit'):
-                st.session_state.current_page='deposit'
-
-            if st.button('Withdraw'):
-                st.session_state.current_page='withdraw'
-
             if st.button('Logout'):
                 st.session_state.current_page='home'
                 st.session_state.user = None
