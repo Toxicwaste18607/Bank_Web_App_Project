@@ -55,3 +55,12 @@ def generate_user_id(users):
 
         if new_id not in users:
             return new_id
+        
+
+'''def save_balance():
+    path = get_data_path("user_data.json")
+
+    with open(path, "w") as file:
+        json.dump(users, file, indent=4)
+    '''
+
