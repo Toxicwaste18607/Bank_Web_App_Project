@@ -12,30 +12,30 @@ class User:
         self.username=username
 
 
-        def withdrawal(money_out):
+    def withdrawal(self,money_out):
 
-            temp_balance = self.balance
+        temp_balance = self.balance
 
-            temp_balance-=money_out
-
-
-            if temp_balance < 0:
-                return None
-            else:
-                self.balance -= money_out
-                save_users(self)
-            return 
+        temp_balance-=money_out
 
 
-
-
-
-
-        def deposit(money_in):
-          
-
-            self.balance += money_in
-
+        if temp_balance < 0:
+            return None
+        else:
+            self.balance -= money_out
             save_users(self)
-            return 
+        return 
+
+
+
+
+
+
+    def deposit(self,money_in):
+        
+
+        self.balance += money_in
+
+        save_users(self)
+        return 
 
