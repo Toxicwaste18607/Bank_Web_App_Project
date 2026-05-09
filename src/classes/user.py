@@ -1,3 +1,7 @@
+from non_page_code.storage import save_users
+
+
+
 class User:
     def __init__(self, user_id, name, username,role, balance, email):
         self.user_id = user_id
@@ -9,11 +13,8 @@ class User:
 
 
         def withdrawal(money_out):
-            user = st.session_state.user
-            users = load_user_data()
 
-
-            temp_balance = user.balance
+            temp_balance = self.balance
 
             temp_balance-=money_out
 
@@ -21,10 +22,9 @@ class User:
             if temp_balance < 0:
                 return None
             else:
-                user.balance -= money_out
-                users[user.user_id]["balance"]=user.balance
+                self.balance -= money_out
                 save_users(users)
-            return user
+            return 
 
 
 
@@ -32,13 +32,10 @@ class User:
 
 
         def deposit(money_in):
-            user = st.session_state.user
-            users = load_user_data()
+          
 
+            self.balance += money_in
 
-            user.balance += money_in
-
-            users[user.user_id]["balance"] = user.balance
             save_users(users)
-            return user
+            return 
 
