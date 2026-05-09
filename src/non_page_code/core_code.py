@@ -31,7 +31,6 @@ def app_core():
                 st.session_state.current_page='withdraw'
 
             if st.button('Logout'):
-                st.session_state.current_page='home'
                 st.rerun()
         
 
@@ -45,7 +44,6 @@ def app_core():
                 st.session_state.current_page='home'
 
             if st.button('Logout'):
-                st.session_state.current_page='home'
                 st.rerun()
         
 
