@@ -37,6 +37,7 @@ def create_user(password, name,user_name, email, role="user"):
     users[user_id] = {
         "password": password,
         "name": name,
+        "user_name":user_name,
         "role": role,
         "balance": 0,
         "email": email
