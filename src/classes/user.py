@@ -37,6 +37,6 @@ class User:
 
         self.balance += money_in
 
-        #save_balance(self)
+        save_balance(self)
         return 
 
