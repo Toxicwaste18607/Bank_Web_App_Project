@@ -1,11 +1,12 @@
 import streamlit as st
 from non_page_code.storage import save_users, load_user_data
-user = st.session_state.user
 
 
 
 
 def withdrawal_page():
+    user = st.session_state.user
+
     with st.form("withdrawal_form"):
         
         money_out=st.number_input("What is the amount you would like to withdraw.")
@@ -23,6 +24,8 @@ def withdrawal_page():
 
 
 def deposit_page():
+    user = st.session_state.user
+
     with st.form("deposit_form"):
         money_in=st.number_input("How much money would you like to deposit.")
         summitted= st.form_submit_button("Confirm transaction")
