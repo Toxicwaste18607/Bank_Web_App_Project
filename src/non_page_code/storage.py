@@ -57,10 +57,10 @@ def generate_user_id(users):
             return new_id
         
 
-'''def save_balance():
+def save_balance(user):
     path = get_data_path("user_data.json")
 
     with open(path, "w") as file:
-        json.dump(users, file, indent=4)
-    '''
+        json.dump(users[user['balance'[user.balance]]], file, indent=4)
+    
 
