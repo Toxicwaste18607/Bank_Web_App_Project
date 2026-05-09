@@ -4,7 +4,7 @@ from .Transactions import *
 
 
 def show_dashboard_page():
-    left,mid,right=st.columns(3)
+    left,mid,right=st.columns([1,2,1])
 
 
     user = st.session_state.user
