@@ -1,5 +1,5 @@
 import streamlit as st
-from .classes import *
+from classes.user import User
 from .storage import *
 
 
