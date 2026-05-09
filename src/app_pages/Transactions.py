@@ -13,7 +13,7 @@ def withdrawal(money_out):
     temp_balance-=money_out
 
 
-    if temp_balance <0:
+    if temp_balance < 0:
         return None
     else:
         user.balance -= money_out
