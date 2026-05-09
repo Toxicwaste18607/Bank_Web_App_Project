@@ -31,7 +31,7 @@ def create_new_account():
     st.header("New User")
 
     with st.form("new_user_form"):
-        user_name=st.text_input("Please enter a Username")
+        username=st.text_input("Please enter a Username")
         name = st.text_input("Enter your name")
         password = st.text_input("Enter a password", type="password")
         email = st.text_input("Email")
@@ -39,7 +39,7 @@ def create_new_account():
         submitted = st.form_submit_button("Create Account")
 
         if submitted:
-            if name == "" or password =="" or email=="" or user_name=="":
+            if name == "" or password =="" or email=="" or username=="":
                 st.error("Please fill out all feilds")
             
             else:
