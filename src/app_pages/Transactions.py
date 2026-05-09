@@ -66,28 +66,6 @@ def deposit_page():
 
 
 
-'''def show_transactions_page():
-
-    if "transaction_type" not in st.session_state:
-        st.session_state.transaction_type = None
-    columns = st.columns(2)
-
-    col1=columns[0]
-    col2=columns[1]
-    
-    with col1:
-        if st.button("Withdrawal"):
-            st.session_state.transaction_type = "withdrawal"
-
-    with col2:
-        if st.button("Deposit"):
-            st.session_state.transaction_type = "deposit"
-
-    if st.session_state.transaction_type == "withdrawal":
-        withdrawal_page()
-
-    elif st.session_state.transaction_type == "deposit":
-        deposit_page()'''
      
 
 
