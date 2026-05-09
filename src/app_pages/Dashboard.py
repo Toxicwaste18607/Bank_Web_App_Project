@@ -12,7 +12,8 @@ def show_dashboard_page():
     st.write(f"Current Balance is ${user.balance:,.2f}")
 
     with st.sidebar:
-        st.write
+        st.write(f'Hello {user.name}.')
+        if st.button
 
 
 
