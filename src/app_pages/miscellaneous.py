@@ -1,5 +1,6 @@
 import streamlit as st
 from non_page_code.auth import *
+from .Transactions import *
 
 
 def search_username():
