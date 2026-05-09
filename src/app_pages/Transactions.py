@@ -1,8 +1,7 @@
 import streamlit as st
 from non_page_code.storage import save_users, load_user_data
-from classes.user import User
-from classes.admin import Admin
-from non_page_code.auth import *
+user = st.session_state.user
+
 
 
 
@@ -29,7 +28,7 @@ def deposit_page():
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
-            deposit(money_in)
+            user.deposit(money_in)
             st.write(f"${money_in} has been added to your account.")
 
 
