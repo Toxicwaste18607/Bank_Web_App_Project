@@ -13,7 +13,11 @@ def show_dashboard_page():
 
     with st.sidebar:
         st.write(f'Hello {user.name}.')
-        if st.button
+        if st.button():pass
+
+        if st.button():pass
+
+        if st
 
 
 
