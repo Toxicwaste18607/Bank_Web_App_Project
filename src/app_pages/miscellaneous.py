@@ -31,6 +31,7 @@ def create_new_account():
     st.header("New User")
 
     with st.form("new_user_form"):
+        user_name=st.text_input("Please enter a Username")
         name = st.text_input("Enter your name")
         password = st.text_input("Enter a password", type="password")
         email = st.text_input("Email")
