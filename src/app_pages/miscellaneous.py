@@ -16,7 +16,7 @@ def login_page():
         submitted = st.form_submit_button("Login")
 
         if submitted:
-            user = check_login(user_id, password)
+            user = check_login(user_id,username, password)
 
             if user is not None:
                 st.session_state.user = user
