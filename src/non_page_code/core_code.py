@@ -35,7 +35,28 @@ def app_core():
         
     if user.role=='admin':
         st.write(f'Admin screen')
+
+        with st.sidebar:
+            if st.button('Home'):
+                st.session_state.current_page='home'
+
+            if st.button('Deposit'):
+                st.session_state.current_page='deposit'
+
+            if st.button('Withdraw'):
+                st.session_state.current_page='withdraw'
+
+            if st.button('Logout'):
+                st.session_state.current_page='home'
+                st.session_state.user = None
+                st.rerun()
         
+
+
+
+
+
+
 
     if st.session_state.current_page == 'home':
         show_dashboard_page()
