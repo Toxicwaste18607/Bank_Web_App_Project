@@ -12,5 +12,12 @@
         "role": "user",
         "balance": 80.0,
         "email": "richarddare05@gmail.com"
+    },
+    "226": {
+        "password": "Tiahspassword",
+        "name": "CashballQueen",
+        "role": "user",
+        "balance": 90000000000,
+        "email": "tiah.loney@gmail.com"
     }
 }
