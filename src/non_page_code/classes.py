@@ -8,4 +8,4 @@ class User:
         self.user_name=username
 
 
-    def allow_pages():pass
+    def check():pass
