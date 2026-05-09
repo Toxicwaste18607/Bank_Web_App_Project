@@ -5,7 +5,7 @@ from app_pages.Dashboard import *
 from app_pages.Transactions import *
 from non_page_code.core_code import app_core
 
-#st.set_page_config(layout="wide")
+st.set_page_config(layout="wide")
 
 
 

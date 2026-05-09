@@ -7,9 +7,6 @@ def show_dashboard_page():
     left,mid,right=st.columns(3)
 
 
-
-
-
     user = st.session_state.user
     st.session_state.current_page ='home'
     st.title("Dashboard")
