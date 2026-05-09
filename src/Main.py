@@ -3,6 +3,7 @@ import streamlit as st
 from app_pages.miscellaneous import *
 from app_pages.Dashboard import *
 from app_pages.Transactions import *
+from non_page_code.core_code import app_core
 
 
 
@@ -22,6 +23,6 @@ if st.session_state.user is None:
         create_new_account()
 
 else:
-    show_dashboard_page()
+    app_core()
 
     
