@@ -20,6 +20,7 @@ def login_page():
 
             if user is not None:
                 st.session_state.user = user
+                st.session_state.current_page ='home'
                 st.success("Logged in!")
                 st.rerun()
 
