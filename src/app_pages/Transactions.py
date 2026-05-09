@@ -51,7 +51,7 @@ def withdrawal_page():
             if result is not None:
                 st.write(f"${money_out} has been withdrawn from your account.")
             else:
-                st.write("Your balance is to low")
+                st.write("Your balance is too low")
 
 
 
