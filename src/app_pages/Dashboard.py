@@ -20,7 +20,7 @@ def show_dashboard_page():
 
         if st.button('Withdraw'):pass
 
-        if st.buttom('Logout'):
+        if st.button('Logout'):
             st.session_state.user = None
             st.rerun()
 
