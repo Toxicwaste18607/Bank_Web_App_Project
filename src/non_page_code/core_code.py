@@ -15,7 +15,7 @@ def app_core():
         st.session_state.current_page ='home'
 
 
-    if user.status() == 'user':
+    if user.role== 'user':
 
         with st.sidebar:
             st.write(f'Hello {user.name}.')
