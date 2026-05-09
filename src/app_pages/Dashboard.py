@@ -4,11 +4,12 @@ from .Transactions import *
 
 
 def show_dashboard_page():
-    col1,col2,col3=st.columns(3)
+    left,mid,right=st.columns(3)
+    top,center,bottom=st.
 
 
 
-    
+
     user = st.session_state.user
     st.session_state.current_page ='home'
     st.title("Dashboard")
