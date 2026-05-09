@@ -23,7 +23,6 @@ if st.session_state.user is None:
         create_new_account()
 
 else:
-    
     app_core()
 
     
