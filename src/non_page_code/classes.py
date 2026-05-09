@@ -15,5 +15,5 @@ class Admin:
         self.role = role
         self.balance = balance
         self.email = email
-        self.user_name=username
+        self.username=username
 
