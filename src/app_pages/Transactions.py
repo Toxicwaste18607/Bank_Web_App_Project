@@ -1,41 +1,8 @@
 import streamlit as st
 from non_page_code.storage import save_users, load_user_data
+from classes.user import User
 
 
-
-def withdrawal(money_out):
-    user = st.session_state.user
-    users = load_user_data()
-
-
-    temp_balance = user.balance
-
-    temp_balance-=money_out
-
-
-    if temp_balance < 0:
-        return None
-    else:
-        user.balance -= money_out
-        users[user.user_id]["balance"]=user.balance
-        save_users(users)
-    return user
-
-
-
-
-
-
-def deposit(money_in):
-    user = st.session_state.user
-    users = load_user_data()
-
-
-    user.balance += money_in
-
-    users[user.user_id]["balance"] = user.balance
-    save_users(users)
-    return user
 
 
 def withdrawal_page():
@@ -45,7 +12,7 @@ def withdrawal_page():
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
-            result = withdrawal(money_out)
+            result = user.withdrawal(money_out)
 
 
             if result is not None:
