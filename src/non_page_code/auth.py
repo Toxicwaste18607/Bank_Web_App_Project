@@ -4,13 +4,13 @@ from .storage import *
 
 
 
-def check_login(user_id,username, password):
+def check_login(user_info, password):
     users = load_user_data()
 
     for user_id, user_data in users.items():
         user_data = users[user_id] 
 
-        if user_id in users or user_data["username"] == username:
+        if user_info in users or user_data["username"] == user_info:
             if user_data["password"] == password:
                 return User(
                     user_id=user_id,

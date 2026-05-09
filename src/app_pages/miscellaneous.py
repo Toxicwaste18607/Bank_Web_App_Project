@@ -8,7 +8,7 @@ def search_username():
 
 def login_page():
     with st.form("login_form"):
-        user_id = st.text_input("Enter your user ID or Username.")
+        user_info = st.text_input("Enter your user ID or Username.")
 
         password = st.text_input(
             "Enter your password",type="password" )
@@ -16,7 +16,7 @@ def login_page():
         submitted = st.form_submit_button("Login")
 
         if submitted:
-            user = check_login(user_id,username, password)
+            user = check_login(user_info, password)
 
             if user is not None:
                 st.session_state.user = user
