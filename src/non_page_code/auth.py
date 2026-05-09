@@ -8,7 +8,7 @@ def check_login(user_id, password):
     users = load_user_data()
 
     if user_id in users:
-        user_data = users[user_id]
+        user_data = users[user_id] 
 
         if user_data["password"] == password:
             return User(
