@@ -39,11 +39,11 @@ def create_new_account():
         submitted = st.form_submit_button("Create Account")
 
         if submitted:
-            if name == "" or password =="" or email=="":
+            if name == "" or password =="" or email=="" or user_name=="":
                 st.error("Please fill out all feilds")
             
             else:
-                new_id = create_user(password, name, email)
+                new_id = create_user(password, name,user_name, email)
                 st.success(f"Account created! Your user ID is {new_id}")
 
 
