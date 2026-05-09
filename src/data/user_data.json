@@ -1,6 +1,4 @@
 {
-    
-    
     "487": {
         "password": "123",
         "name": "Connor Mielewski",
@@ -8,5 +6,13 @@
         "role": "user",
         "balance": 10000.0,
         "email": "Connor@cool.com"
+    },
+    "969": {
+        "password": "12345678ms",
+        "name": "Tiah",
+        "user_name": "Cashball",
+        "role": "user",
+        "balance": 2556.0,
+        "email": "tiah.loney@gmail.com"
     }
 }
