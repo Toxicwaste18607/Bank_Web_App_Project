@@ -3,7 +3,8 @@ import streamlit as st
 from non_page_code.auth import *
 from app_pages.Transactions import *
 from app_pages.Dashboard import *
-
+from classes.user import User
+from classes.admin import Admin
 
 
 
