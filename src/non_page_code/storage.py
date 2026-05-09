@@ -29,7 +29,7 @@ def save_users(users):
     '''Saves users data'''
 
 
-def create_user(password, name,user_name, email, role="user"):
+def create_user(password, name,username, email, role="user"):
     users = load_user_data()
 
     user_id = generate_user_id(users)
@@ -37,7 +37,7 @@ def create_user(password, name,user_name, email, role="user"):
     users[user_id] = {
         "password": password,
         "name": name,
-        "user_name":user_name,
+        "username":username,
         "role": role,
         "balance": 0,
         "email": email
