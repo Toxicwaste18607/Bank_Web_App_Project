@@ -8,4 +8,5 @@ class User:
         self.user_name=username
 
 
-    def check():pass
+    def status(self):
+        return self.role
