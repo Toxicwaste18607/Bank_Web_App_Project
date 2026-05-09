@@ -26,6 +26,7 @@ def app_core():
             st.session_state.current_page='withdraw'
 
         if st.button('Logout'):
+            st.session_state.current_page='home'
             st.session_state.user = None
             st.rerun()
         
