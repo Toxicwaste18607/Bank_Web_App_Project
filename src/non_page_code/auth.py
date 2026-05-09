@@ -10,7 +10,7 @@ def check_login(user_id, password):
     for user_id, user_data in users.items():
         user_data = users[user_id] 
 
-        if user_id in users or user_data["username"] == user_name:
+        if user_id in users or user_data["username"] == username:
             if user_data["password"] == password:
                 return User(
                     user_id=user_id,

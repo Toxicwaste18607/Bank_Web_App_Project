@@ -43,7 +43,7 @@ def create_new_account():
                 st.error("Please fill out all feilds")
             
             else:
-                new_id = create_user(password, name,user_name, email)
+                new_id = create_user(password, name,username, email)
                 st.success(f"Account created! Your user ID is {new_id}")
 
 
