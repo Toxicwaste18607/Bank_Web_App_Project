@@ -11,7 +11,8 @@ from app_pages.Dashboard import *
 
 def app_core():
     user = st.session_state.user
-    st.session_state.current_page ='home'
+    if st.session_state.current_page == None:
+        st.session_state.current_page ='home'
 
 
     #if user.check == "user":
