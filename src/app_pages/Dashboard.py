@@ -20,7 +20,8 @@ def show_dashboard_page():
 
     
     if user.role=='admin':
-        
+        with mid:
+            st.write('Admin dashboard')
 
 
 
