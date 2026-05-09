@@ -21,6 +21,7 @@ def login_page():
             if user is not None:
                 st.session_state.user = user
                 st.success("Logged in!")
+                st.session_state.current_page=None
                 st.rerun()
 
             else:
