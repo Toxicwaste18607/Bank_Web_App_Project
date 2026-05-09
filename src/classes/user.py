@@ -23,7 +23,7 @@ class User:
             return None
         else:
             self.balance -= money_out
-            save_users(self)
+            save_users(self.balance)
         return 
 
 
