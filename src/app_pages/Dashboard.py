@@ -20,13 +20,13 @@ def show_dashboard_page():
 
         if st.button():pass
 
-        if st.buttom():pass
+        if st.buttom('Logout'):
+            st.session_state.user = None
+            st.rerun()
 
 
 
 
-    if st.button("Logout"):
-        st.session_state.user = None
-        st.rerun()
+
 
 
