@@ -49,7 +49,8 @@ def create_new_account():
 
 
 
-def show_dashboard_page():
+def app_():
+    user = st.session_state.user
 
 
     #if user.check == "user":
