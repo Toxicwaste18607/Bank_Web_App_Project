@@ -19,5 +19,13 @@
         "role": "user",
         "balance": 90000000000,
         "email": "tiah.loney@gmail.com"
+    },
+    "487": {
+        "password": "123",
+        "name": "Connor Mielewski",
+        "user_name": "ConnorJ",
+        "role": "user",
+        "balance": 0,
+        "email": "Connor@cool.com"
     }
 }
