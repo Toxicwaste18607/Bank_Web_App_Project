@@ -26,6 +26,7 @@ class User:
         else:
             self.balance -= money_out
             save_balance(self)
+            add_transaction(self,'withdrawal',money_out)
         return True
 
 
