@@ -25,7 +25,7 @@ def login_page():
                 st.rerun()
 
             if user is False:
-                st.error("Y")
+                st.error("Your Account is locked please try again later.")
             if user is None:
                 st.error("Invalid login")
 
