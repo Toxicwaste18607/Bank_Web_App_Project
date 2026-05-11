@@ -37,8 +37,6 @@ The project was designed to demonstrate object-oriented programming, file handli
 # Installation
 
 Install the required dependencies:
-
-
 pip install streamlit
 ## How the Application Works
 
@@ -94,5 +92,4 @@ This project was created as a learning experience to improve understanding of:
 ## AI Assistance
 
 Artificial intelligence tools were used during the development of this project as a learning and debugging resource. AI assistance was primarily used to help identify coding errors, explain programming concepts, assist with troubleshooting, and provide guidance on improving project structure and organization.
-
 All core implementation, project design decisions, and final code integration were completed by the developer as part of the learning process.
