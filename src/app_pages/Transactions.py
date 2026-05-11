@@ -31,8 +31,11 @@ def deposit_page():
         summitted= st.form_submit_button("Confirm transaction")
 
         if summitted:
-            user.deposit(money_in)
-            st.write(f"${money_in} has been added to your account.")
+            result=user.deposit(money_in)
+            if result is None:
+                st.write("You cannot deposit less then $0.01.")
+            if result is not None:
+                st.write(f"${money_in} has been added to your account.")
 
 
 
