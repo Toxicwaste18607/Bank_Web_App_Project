@@ -10,11 +10,11 @@ def show_dashboard_page():
     transaction = load_transactions()
 
     user = st.session_state.user
-    recent_transactions=transaction[user.user_id][-3:]
 
 
     
     if user.role=='user':
+        recent_transactions=transaction[user.user_id][-3:]
 
         with mid:
             st.title("Dashboard")
