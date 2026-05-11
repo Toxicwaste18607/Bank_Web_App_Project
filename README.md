@@ -20,23 +20,7 @@ Python
 Streamlit
 JSON
 Object-Oriented Programming (OOP)
-Project Structure
-src/
-│
-├── main.py
-│
-├── app_pages/
-│   ├── Dashboard.py
-│   ├── Transactions.py
-│   └── miscellaneous.py
-│
-├── non_page_code/
-│   ├── classes.py
-│   ├── storage.py
-│   └── authentication.py
-│
-└── data/
-    └── user_data.json
+
 Installation
 Install the required dependencies:
 pip install streamlit
