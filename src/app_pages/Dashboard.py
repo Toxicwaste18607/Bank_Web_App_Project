@@ -7,7 +7,7 @@ from non_page_code.storage import load_transactions
 
 def show_dashboard_page():
     left,mid,right=st.columns([1,2,1])
-    transactions = load_transactions()
+    transaction = load_transactions()
 
     user = st.session_state.user
     recent_transactions=transactions[user.user_id][-3:]
