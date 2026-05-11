@@ -18,13 +18,15 @@ def login_page():
         if submitted:
             user = check_login(user_info, password)
 
-            if user is not None:
+            if user is not None or False:
                 st.session_state.user = user
                 st.success("Logged in!")
                 st.session_state.current_page=None
                 st.rerun()
 
-            else:
+            if user is False:
+                st.error("Y")
+            if user is None:
                 st.error("Invalid login")
 
 
