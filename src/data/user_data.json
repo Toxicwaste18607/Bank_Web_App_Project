@@ -88,5 +88,14 @@
         "balance": 0,
         "email": "bob@gmail.com",
         "locked": true
+    },
+    "903": {
+        "password": "123",
+        "name": "Kenny",
+        "username": "Kenny",
+        "role": "user",
+        "balance": 0,
+        "email": "Kenny@cool.kids",
+        "locked": true
     }
 }
