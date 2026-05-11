@@ -36,9 +36,11 @@ class User:
 
     def deposit(self,money_in):
         
-        
-
-        self.balance += money_in
+        if money_in <=0:
+            return None
+        else:
+            self.balance += money_in
+            self.balance=round(self.balance,2)
 
         save_balance(self)
         add_transaction(self,'deposit',money_in)
