@@ -2,6 +2,7 @@ import streamlit as st
 import random
 import os
 import json
+import datetime
 
 APP_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -86,4 +87,4 @@ def save_transactions(transactions):
         transactions={"type":transaction_type,
                       'amount':amount,
                       'balance_after':user.balance,
-                      'date':datetime.now}
+                      'date':str(datetime.now())}
