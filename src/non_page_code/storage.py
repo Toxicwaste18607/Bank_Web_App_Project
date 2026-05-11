@@ -63,3 +63,20 @@ def save_balance(user):
 
     save_users(users)
 
+def load_transactions():
+    path = get_data_path("transactions.json")
+    if not os.path.exists(path):
+        return{}
+    
+    with open(path,'r') as file:
+        return json.load(file)
+    
+
+def save_transactions(transactions):
+    path = get_data_path("transactions.json")
+
+    with open(path,'w') as file:
+        json.dump(transactions,file,indent=4)
+
+    def add_transactions(user,transaction_type,amount):
+        transactions=load_transactions()
