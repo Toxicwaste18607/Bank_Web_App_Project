@@ -41,8 +41,9 @@ class User:
         else:
             self.balance += money_in
             self.balance=round(self.balance,2)
+            save_balance(self)
+            add_transaction(self,'deposit',money_in)
 
-        save_balance(self)
-        add_transaction(self,'deposit',money_in)
+        
         return 
 
