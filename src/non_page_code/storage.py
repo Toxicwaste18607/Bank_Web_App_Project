@@ -79,14 +79,15 @@ def save_transactions(transactions):
     with open(path,'w') as file:
         json.dump(transactions,file,indent=4)
 
-    def add_transactions(user,transaction_type,amount):
+    def add_transaction(user,transaction_type,amount):
         transactions=load_transactions()
         if user.user_id not in transactions:
             transactions[user.user_id]=[]
 
-        transactions={"type":transaction_type,
+        transaction={"type":transaction_type,
                       'amount':amount,
                       'balance_after':user.balance,
                       'date':str(datetime.now())}
         
         transactions[user.user_id].append(transaction)
+        
