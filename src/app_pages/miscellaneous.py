@@ -18,17 +18,17 @@ def login_page():
         if submitted:
             user = check_login(user_info, password)
 
-            if user is not None or False:
-                st.session_state.user = user
-                st.success("Logged in!")
-                st.session_state.current_page=None
-                st.rerun()
-
             if user is False:
-                st.error("Your Account is locked please try again later.")
-            if user is None:
+                st.error("Your account is locked. Please try again later.")
+
+            elif user is None:
                 st.error("Invalid login")
 
+            else:
+                st.session_state.user = user
+                st.success("Logged in!")
+                st.session_state.current_page = None
+                st.rerun()
 
 def create_new_account(): 
     st.header("New User")
