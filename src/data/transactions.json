@@ -1,0 +1,142 @@
+{
+    "487": [
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 8361.000000000002,
+            "date": "2026-05-10 22:34:05.170686"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 8561.000000000002,
+            "date": "2026-05-10 22:34:06.173187"
+        }
+    ],
+    "252": [
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 200.0,
+            "date": "2026-05-11 00:14:11.171932"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 400.0,
+            "date": "2026-05-11 00:14:12.054282"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 600.0,
+            "date": "2026-05-11 00:14:14.027073"
+        },
+        {
+            "type": "withdrawal",
+            "amount": 300.0,
+            "balance_after": 300.0,
+            "date": "2026-05-11 00:14:38.615901"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 2300.0,
+            "date": "2026-05-11 00:14:43.475448"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 4300.0,
+            "date": "2026-05-11 00:17:36.722157"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 6300.0,
+            "date": "2026-05-11 00:17:37.398965"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 8300.0,
+            "date": "2026-05-11 00:17:38.810601"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 10300.0,
+            "date": "2026-05-11 00:17:39.015846"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 12300.0,
+            "date": "2026-05-11 00:17:39.191680"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 14300.0,
+            "date": "2026-05-11 00:17:39.385360"
+        },
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 16300.0,
+            "date": "2026-05-11 00:17:39.615975"
+        }
+    ],
+    "970": [
+        {
+            "type": "deposit",
+            "amount": 2000.0,
+            "balance_after": 2000.0,
+            "date": "2026-05-11 00:21:04.291763"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 2200.0,
+            "date": "2026-05-11 00:22:57.129363"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 2400.0,
+            "date": "2026-05-11 00:22:57.946478"
+        },
+        {
+            "type": "withdrawal",
+            "amount": 300.0,
+            "balance_after": 2100.0,
+            "date": "2026-05-11 00:23:05.574742"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 2300.0,
+            "date": "2026-05-11 00:25:53.743904"
+        },
+        {
+            "type": "withdrawal",
+            "amount": 2000.0,
+            "balance_after": 300.0,
+            "date": "2026-05-11 00:25:58.240137"
+        }
+    ],
+    "255": [
+        {
+            "type": "deposit",
+            "amount": 1000.0,
+            "balance_after": 1000.0,
+            "date": "2026-05-11 13:20:28.969365"
+        },
+        {
+            "type": "withdrawal",
+            "amount": 200.0,
+            "balance_after": 800.0,
+            "date": "2026-05-11 13:20:41.827221"
+        }
+    ]
+}

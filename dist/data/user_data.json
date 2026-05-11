@@ -1,0 +1,83 @@
+{
+    "487": {
+        "password": "123",
+        "name": "Connor Mielewski",
+        "username": "ConnorJ",
+        "role": "user",
+        "balance": 8577.000000000002,
+        "email": "Connor@cool.com",
+        "locked": false
+    },
+    "969": {
+        "password": "12345678ms",
+        "name": "Tiah",
+        "username": "Cashball",
+        "role": "user",
+        "balance": 499.9974440000001,
+        "email": "tiah.loney@gmail.com",
+        "locked": false
+    },
+    "907": {
+        "password": "123",
+        "name": "Admin",
+        "username": "Admin",
+        "role": "admin",
+        "balance": 0,
+        "email": "Admin",
+        "locked": false
+    },
+    "981": {
+        "password": "123",
+        "name": "Bobby",
+        "username": "Bob",
+        "role": "user",
+        "balance": 0,
+        "email": "1",
+        "locked": false
+    },
+    "417": {
+        "password": "123",
+        "name": "Jake",
+        "username": "Jake",
+        "role": "user",
+        "balance": 0,
+        "email": "Jake@gmail.com",
+        "locked": false
+    },
+    "970": {
+        "password": "123",
+        "name": "Connor",
+        "username": "Connor",
+        "role": "user",
+        "balance": 300.0,
+        "email": "Connor@outlook.com",
+        "locked": false
+    },
+    "252": {
+        "password": "123",
+        "name": "James",
+        "username": "James",
+        "role": "user",
+        "balance": 16300.0,
+        "email": "test",
+        "locked": false
+    },
+    "173": {
+        "password": "123",
+        "name": "Connor",
+        "username": "Mielewski",
+        "role": "user",
+        "balance": 0,
+        "email": "test",
+        "locked": false
+    },
+    "255": {
+        "password": "apptesting",
+        "name": "Joe Mielewski",
+        "username": "jmielewski",
+        "role": "user",
+        "balance": 800.0,
+        "email": "jmielewski@comcast.net",
+        "locked": true
+    }
+}
