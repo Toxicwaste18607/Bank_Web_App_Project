@@ -92,3 +92,11 @@ def add_transaction(user,transaction_type,amount):
     
     transactions[user.user_id].append(transaction)
     save_transactions(transactions)
+
+
+def set_account_lock(user_id, locked_status):
+    users = load_user_data()
+
+    users[user_id]["locked"] = locked_status
+
+    save_users(users)
