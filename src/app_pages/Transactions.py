@@ -20,7 +20,8 @@ def withdrawal_page():
                 st.write(f"${money_out} has been withdrawn from your account.")
             if result == None:
                 st.write("Your balance is too low")
-            if result == 
+            if result == False:
+                st.write("You cannot Withdraw less then $0.01")
 
 
 
