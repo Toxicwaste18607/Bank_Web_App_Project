@@ -14,7 +14,8 @@
         "username": "Cashball",
         "role": "user",
         "balance": 499.9974440000001,
-        "email": "tiah.loney@gmail.com"
+        "email": "tiah.loney@gmail.com",
+        "locked":false
     },
     "907": {
         "password": "123",

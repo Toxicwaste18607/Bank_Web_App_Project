@@ -41,7 +41,8 @@ def create_user(password, name,username, email, role="user"):
         "username":username,
         "role": role,
         "balance": 0,
-        "email": email
+        "email": email,
+        "locked": False
     }
 
     save_users(users)
