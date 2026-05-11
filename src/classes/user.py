@@ -1,4 +1,5 @@
-from non_page_code.storage import save_balance
+from non_page_code.storage import save_balance, add_transaction
+
 
 
 
