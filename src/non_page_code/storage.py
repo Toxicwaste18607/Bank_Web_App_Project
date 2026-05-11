@@ -82,3 +82,8 @@ def save_transactions(transactions):
         transactions=load_transactions()
         if user.user_id not in transactions:
             transactions[user.user_id]=[]
+
+        transactions={"type":transaction_type,
+                      'amount':amount,
+                      'balance_after':user.balance,
+                      'date':datetime.now}
