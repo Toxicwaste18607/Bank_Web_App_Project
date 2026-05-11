@@ -2,10 +2,12 @@ import streamlit as st
 from .Transactions import *
 from classes.user import User
 from classes.admin import Admin
+from non_page_code.storage import load_transactions
 
 
 def show_dashboard_page():
     left,mid,right=st.columns([1,2,1])
+    load_transactions()
 
     user = st.session_state.user
 
