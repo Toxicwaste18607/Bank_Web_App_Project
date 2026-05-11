@@ -15,18 +15,23 @@ class User:
 
 
     def withdrawal(self,money_out):
+        if money_out <=0:   
+            return False
 
-        temp_balance = self.balance
-
-        temp_balance-=money_out
-
-
-        if temp_balance < 0:
-            return None
         else:
-            self.balance -= money_out
-            save_balance(self)
-            add_transaction(self,'withdrawal',money_out)
+
+
+
+            temp_balance = self.balance
+
+
+            temp_balance-=money_out
+            if temp_balance < 0:
+                return None
+            else:
+                self.balance -= money_out
+                save_balance(self)
+                add_transaction(self,'withdrawal',money_out)
         return True
 
 
