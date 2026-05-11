@@ -22,9 +22,9 @@ def show_dashboard_page():
 
             st.write(f"Current Balance is ${user.balance:,.2f}")
             for transaction in recent_transactions:
+                st.write(transaction["date"])
                 st.write(transaction["type"])
                 st.write(transaction["amount"])
-                st.write(transaction["date"])
 
 
 
