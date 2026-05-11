@@ -20,7 +20,7 @@ def show_transactions():
     if user.role=='user':
 
         with mid:
-            st.title("Dashboard")
+            st.title("Transaction History")
             st.write(f"Welcome, {user.name}")
 
             st.write(f"Current Balance is ${user.balance:,.2f}")
