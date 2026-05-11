@@ -39,5 +39,6 @@ class User:
         self.balance += money_in
 
         save_balance(self)
+        add_transaction(self,'deposit',money_in)
         return 
 
