@@ -38,7 +38,7 @@ The project was designed to demonstrate object-oriented programming, file handli
 
 Install the required dependencies:
 
-```bash
+
 pip install streamlit
 ## How the Application Works
 
