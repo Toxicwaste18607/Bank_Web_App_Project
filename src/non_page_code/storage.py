@@ -80,3 +80,5 @@ def save_transactions(transactions):
 
     def add_transactions(user,transaction_type,amount):
         transactions=load_transactions()
+        if user.user_id not in transactions:
+            transactions[user.user_id]=[]
