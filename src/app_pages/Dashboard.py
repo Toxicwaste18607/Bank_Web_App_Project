@@ -13,6 +13,7 @@ def show_dashboard_page():
 
 
     
+<<<<<<< HEAD
 def show_dashboard_page():
     left, mid, right = st.columns([1, 4, 1])
     transactions = load_transactions()
@@ -21,10 +22,15 @@ def show_dashboard_page():
 
     if user.role == "user":
         user_transactions = transactions.get(user.user_id, [])
+=======
+    if user.role=='user':
+        recent_transactions=transaction[user.user_id][-3:]
+>>>>>>> c2c7408106d9fdce64f8ec3e712cd22779f6c64a
 
         with mid:
             st.title("Dashboard")
             st.write(f"Welcome, {user.name}")
+<<<<<<< HEAD
             st.write(f"Current Balance is ${user.balance:,.2f}")
 
             recent_transactions = user_transactions[-3:]
@@ -36,6 +42,14 @@ def show_dashboard_page():
                     st.write(transaction["date"])
                     st.write(transaction["type"])
                     st.write(transaction["amount"])
+=======
+
+            st.write(f"Current Balance is ${user.balance:,.2f}")
+            for transaction in recent_transactions:
+                st.write(transaction["date"])
+                st.write(transaction["type"])
+                st.write(transaction["amount"])
+>>>>>>> c2c7408106d9fdce64f8ec3e712cd22779f6c64a
 
 
 

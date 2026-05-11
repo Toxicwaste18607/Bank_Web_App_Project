@@ -25,6 +25,7 @@
         "balance": 0,
         "email": "Admin",
         "locked": false
+<<<<<<< HEAD
     },
     "981": {
         "password": "123",
@@ -79,5 +80,7 @@
         "balance": 800.0,
         "email": "jmielewski@comcast.net",
         "locked": true
+=======
+>>>>>>> c2c7408106d9fdce64f8ec3e712cd22779f6c64a
     }
 }

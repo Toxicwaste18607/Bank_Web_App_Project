@@ -50,5 +50,9 @@ class User:
             add_transaction(self,'deposit',money_in)
 
         
+<<<<<<< HEAD
         return True
+=======
+        return 
+>>>>>>> c2c7408106d9fdce64f8ec3e712cd22779f6c64a
 

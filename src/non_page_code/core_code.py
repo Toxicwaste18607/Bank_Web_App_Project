@@ -33,7 +33,11 @@ def app_core():
             if st.button('Withdraw'):
                 st.session_state.current_page='withdraw'
 
+<<<<<<< HEAD
             if st.button("History"):
+=======
+            if st.button("Histroy"):
+>>>>>>> c2c7408106d9fdce64f8ec3e712cd22779f6c64a
                 st.session_state.current_page='history'
 
             if st.button('Logout'):
