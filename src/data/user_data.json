@@ -5,7 +5,8 @@
         "username": "ConnorJ",
         "role": "user",
         "balance": 8577.000000000002,
-        "email": "Connor@cool.com"
+        "email": "Connor@cool.com",
+        "locked":false
     },
     "969": {
         "password": "12345678ms",
