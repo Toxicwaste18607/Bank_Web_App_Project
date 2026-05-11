@@ -88,3 +88,5 @@ def save_transactions(transactions):
                       'amount':amount,
                       'balance_after':user.balance,
                       'date':str(datetime.now())}
+        
+        transactions[user.user_id].append(transaction)
