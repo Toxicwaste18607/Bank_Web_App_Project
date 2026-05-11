@@ -2,7 +2,7 @@ import streamlit as st
 import random
 import os
 import json
-import datetime
+from datetime import datetime
 
 APP_PATH = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
