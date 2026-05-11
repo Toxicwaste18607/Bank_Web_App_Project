@@ -7,10 +7,12 @@ from non_page_code.storage import load_transactions
 
 def show_dashboard_page():
     left,mid,right=st.columns([1,2,1])
-    load_transactions()
+    transactions = load_transactions()
 
     user = st.session_state.user
+    recent_transactions=transactions[user.user_id][-3:]
 
+    
     
     if user.role=='user':
 
@@ -20,10 +22,13 @@ def show_dashboard_page():
 
             st.write(f"Current Balance is ${user.balance:,.2f}")
 
+
+
     
     if user.role=='admin':
         with mid:
             st.write('Admin dashboard')
+
 
 
 
