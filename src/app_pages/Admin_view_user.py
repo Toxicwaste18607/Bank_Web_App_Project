@@ -23,13 +23,13 @@ def admin_users_page():
         st.write(f"Balance: ${user_data['balance']:,.2f}")
         st.write(f"Locked: {user_data.get('locked', False)}")
 
-        if user_data.get("locked", False):
+        '''if user_data.get("locked", False):
             if st.button(f"Unlock {user_id}"):
                 set_account_lock(user_id, False)
                 st.rerun()
         else:
             if st.button(f"Lock {user_id}"):
                 set_account_lock(user_id, True)
-                st.rerun()
+                st.rerun()'''
 
         st.divider()
