@@ -59,3 +59,8 @@ Web application development
 Data persistence
 User authentication systems
 Application structure and organization
+
+
+AI Assistance
+Artificial intelligence tools were used during the development of this project as a learning and debugging resource. AI assistance was primarily used to help identify coding errors, explain programming concepts, assist with troubleshooting, and provide guidance on improving project structure and organization.
+All core implementation, project design decisions, and final code integration were completed by the developer as part of the learning process.
