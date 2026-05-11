@@ -6,6 +6,7 @@ from app_pages.Dashboard import *
 from classes.user import User
 from classes.admin import Admin
 from app_pages.Transaction_History import show_transactions
+from non_page_code.storage import load_user_data, set_account_lock
 
 
 
@@ -23,13 +24,13 @@ def admin_users_page():
         st.write(f"Balance: ${user_data['balance']:,.2f}")
         st.write(f"Locked: {user_data.get('locked', False)}")
 
-        '''if user_data.get("locked", False):
+        if user_data.get("locked", False):
             if st.button(f"Unlock {user_id}"):
                 set_account_lock(user_id, False)
                 st.rerun()
         else:
             if st.button(f"Lock {user_id}"):
                 set_account_lock(user_id, True)
-                st.rerun()'''
+                st.rerun()
 
         st.divider()
