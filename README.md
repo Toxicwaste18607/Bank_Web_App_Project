@@ -30,7 +30,6 @@ The project was designed to demonstrate object-oriented programming, file handli
 - Python
 - Streamlit
 - JSON
-- Object-Oriented Programming (OOP)
 
 ---
 
