@@ -90,4 +90,4 @@ def save_transactions(transactions):
                       'date':str(datetime.now())}
         
         transactions[user.user_id].append(transaction)
-        
+        save_transactions(transactions)
