@@ -6,6 +6,7 @@ from app_pages.Dashboard import *
 from classes.user import User
 from classes.admin import Admin
 from app_pages.Transaction_History import show_transactions
+from app_pages.Admin_view_user import admin_users_page
 
 
 
@@ -81,5 +82,6 @@ def app_core():
 
 
 
-    if  st.session_state.current_page=='user': pass
+    if  st.session_state.current_page=='user': 
+        admin_users_page()
 
