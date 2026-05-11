@@ -10,7 +10,7 @@ def show_dashboard_page():
     transaction = load_transactions()
 
     user = st.session_state.user
-    recent_transactions=transactions[user.user_id][-3:]
+    recent_transactions=transaction[user.user_id][-3:]
 
 
     
