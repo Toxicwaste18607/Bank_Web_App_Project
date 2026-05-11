@@ -5,6 +5,8 @@ from app_pages.Transactions import *
 from app_pages.Dashboard import *
 from classes.user import User
 from classes.admin import Admin
+from app_pages.Transaction_History import show_transactions
+
 
 
 
@@ -29,6 +31,9 @@ def app_core():
 
             if st.button('Withdraw'):
                 st.session_state.current_page='withdraw'
+
+            if st.button("Histoy"):
+                st.session_state.current_page='history'
 
             if st.button('Logout'):
                 st.session_state.user= None
@@ -66,3 +71,6 @@ def app_core():
 
     if st.session_state.current_page == 'withdraw':
         withdrawal_page()
+
+    if st.session_state.current_page=='history':
+        show_transactions()
