@@ -9,7 +9,7 @@ from non_page_code.storage import load_transactions
 
 
 def show_transactions():
-    left,mid,right=st.columns([1,4,1])
+    left,mid,right=st.columns([.5,4,.5])
     transaction = load_transactions()
 
     user = st.session_state.user
