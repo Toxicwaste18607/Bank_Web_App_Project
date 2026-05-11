@@ -49,7 +49,7 @@
         "name": "Connor",
         "username": "Connor",
         "role": "user",
-        "balance": 300.0,
+        "balance": 500.0,
         "email": "Connor@outlook.com",
         "locked": false
     },

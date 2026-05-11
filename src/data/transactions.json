@@ -123,6 +123,30 @@
             "amount": 2000.0,
             "balance_after": 300.0,
             "date": "2026-05-11 00:25:58.240137"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 500.0,
+            "date": "2026-05-11 14:26:46.096793"
+        },
+        {
+            "type": "deposit",
+            "amount": 200.0,
+            "balance_after": 700.0,
+            "date": "2026-05-11 14:26:46.495657"
+        },
+        {
+            "type": "withdrawal",
+            "amount": 100.0,
+            "balance_after": 600.0,
+            "date": "2026-05-11 14:26:55.372557"
+        },
+        {
+            "type": "withdrawal",
+            "amount": 100.0,
+            "balance_after": 500.0,
+            "date": "2026-05-11 14:26:55.688377"
         }
     ],
     "255": [
