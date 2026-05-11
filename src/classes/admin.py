@@ -8,3 +8,5 @@ class Admin:
         self.balance = balance
         self.email = email
         self.username=username
+
+    

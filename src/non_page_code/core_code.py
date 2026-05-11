@@ -50,6 +50,10 @@ def app_core():
             if st.button('Home'):
                 st.session_state.current_page='home'
 
+            if st.button('Users'):
+                st.session_state.current_page='users'
+
+
             if st.button('Logout'):
                 st.session_state.user= None
                 st.session_state.current_page='home'
@@ -74,3 +78,8 @@ def app_core():
 
     if st.session_state.current_page=='history':
         show_transactions()
+
+
+
+    if  st.session_state.current_page=='user': pass
+
