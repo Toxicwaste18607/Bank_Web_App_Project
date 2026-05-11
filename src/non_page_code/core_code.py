@@ -32,7 +32,7 @@ def app_core():
             if st.button('Withdraw'):
                 st.session_state.current_page='withdraw'
 
-            if st.button("Histoy"):
+            if st.button("Histroy"):
                 st.session_state.current_page='history'
 
             if st.button('Logout'):
