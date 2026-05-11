@@ -51,7 +51,7 @@ def app_core():
             if st.button('Home'):
                 st.session_state.current_page='home'
 
-            if st.button('User Managment'):
+            if st.button('User Management'):
                 st.session_state.current_page='user'
 
 

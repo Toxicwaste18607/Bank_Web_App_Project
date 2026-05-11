@@ -6,7 +6,7 @@
         "role": "user",
         "balance": 8577.000000000002,
         "email": "Connor@cool.com",
-        "locked":false
+        "locked": false
     },
     "969": {
         "password": "12345678ms",
@@ -15,7 +15,7 @@
         "role": "user",
         "balance": 499.9974440000001,
         "email": "tiah.loney@gmail.com",
-        "locked":false
+        "locked": false
     },
     "907": {
         "password": "123",
@@ -24,6 +24,6 @@
         "role": "admin",
         "balance": 0,
         "email": "Admin",
-        "locked":false
+        "locked": false
     }
 }
