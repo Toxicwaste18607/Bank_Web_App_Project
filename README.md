@@ -39,3 +39,59 @@ Install the required dependencies:
 
 ```bash
 pip install streamlit
+## How the Application Works
+
+1. Users create or log into an account.
+2. User information is loaded from a JSON file.
+3. The application stores user session data using Streamlit session state.
+4. Deposits and withdrawals update the user balance.
+5. Updated account information is saved back into the JSON storage file.
+
+---
+
+## Data Storage
+
+The application uses a JSON file to store user information and balances. Data is loaded when the application starts and saved whenever account changes occur.
+
+### Example Stored Data
+
+- User ID
+- Username
+- Email
+- Account Balance
+- User Role
+
+---
+
+## Future Improvements
+
+Potential future upgrades include:
+
+- Transfer money between accounts
+- Transaction history tracking
+- Password hashing and encryption
+- Database integration
+- Improved UI design
+- Admin management tools
+- Multi-factor authentication
+
+---
+
+## Educational Purpose
+
+This project was created as a learning experience to improve understanding of:
+
+- Python programming
+- Object-oriented design
+- Web application development
+- Data persistence
+- User authentication systems
+- Application structure and organization
+
+---
+
+## AI Assistance
+
+Artificial intelligence tools were used during the development of this project as a learning and debugging resource. AI assistance was primarily used to help identify coding errors, explain programming concepts, assist with troubleshooting, and provide guidance on improving project structure and organization.
+
+All core implementation, project design decisions, and final code integration were completed by the developer as part of the learning process.
