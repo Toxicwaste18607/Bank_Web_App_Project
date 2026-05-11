@@ -31,9 +31,9 @@
         "name": "Bobby",
         "username": "Bob",
         "role": "user",
-        "balance": 0,
+        "balance": 200.0,
         "email": "1",
-        "locked": false
+        "locked": true
     },
     "417": {
         "password": "123",
@@ -78,6 +78,15 @@
         "role": "user",
         "balance": 800.0,
         "email": "jmielewski@comcast.net",
+        "locked": true
+    },
+    "681": {
+        "password": "123",
+        "name": "bob",
+        "username": "Bob",
+        "role": "user",
+        "balance": 0,
+        "email": "bob@gmail.com",
         "locked": true
     }
 }
