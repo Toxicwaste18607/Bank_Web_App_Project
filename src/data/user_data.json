@@ -23,6 +23,7 @@
         "username": "Admin",
         "role": "admin",
         "balance": 0,
-        "email": "Admin"
+        "email": "Admin",
+        "locked":false
     }
 }
